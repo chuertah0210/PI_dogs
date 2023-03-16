@@ -12,8 +12,8 @@ exports.getIdBreed = async (req, res) => {
           id,
         },
       });
-    console.log(idRaza);
-    console.log(id);
+   
+   
         if (perros.length === 0) {
           const response = await axios.get('https://api.thedogapi.com/v1/breeds');
           
