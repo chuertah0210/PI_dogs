@@ -26,10 +26,6 @@ exports.getTemperaments = async (req, res) => {
           }));
           await Temperament.bulkCreate(tempUnicDogs);
 
-       //console.log( tempUnicDogs);
-    
-          // Agregamos un insert en la base de datos
-         // await Dog.bulkCreate(razasDePerros);
           return res.status(200).json({ temp_aux });
         }
     
