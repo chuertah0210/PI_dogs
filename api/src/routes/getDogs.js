@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
     try {
         const name = req.query['name']//busca si hay un 'name' por query(en la URL), '/dogs?:name'
         const totalDogs = await getAllDogs();
-        console.log(req.query['name']);
+       
 
         if (name) {//si hay un query
             let dogName = await totalDogs.filter(//filtro la cte que tiene todos los dogs y filtro, buscando si
