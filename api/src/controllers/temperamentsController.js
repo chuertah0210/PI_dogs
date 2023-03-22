@@ -38,7 +38,7 @@ exports.getTemperaments = async (req, res) => {
         
         let newDogTemp=[];
 
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < temp_aux2.length; i++) {
           temp_aux2[i].forEach(element => {
             let elementoArray2 = tempUnicDogs.find((el) => el.nombre === element.nombre);
             newDogTemp.push({

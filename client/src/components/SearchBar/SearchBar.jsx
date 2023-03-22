@@ -17,7 +17,7 @@ export default function SearchBar({ setCurrentPage, allDogs }) {
   const handlerButton = (e) => {
     e.preventDefault();
     dispatch(getNameDogs(name)); //el name va a ser mi estado local y se lo mando a la acción, para que se lo pase al back
-    setCurrentPage(1);
+    //setCurrentPage(1);
   };
 
   return (

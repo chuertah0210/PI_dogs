@@ -50,4 +50,13 @@ const getIdDogs = async () => {
   return perros;
  }
 
-module.exports = { getAllDogs,getIdDogs };
+ const getNameDogs = async () => {
+  const perros = await Dog.findAll({
+    include: [{
+      model: Temperament,
+    }]
+  });
+  return perros;
+ }
+
+module.exports = { getAllDogs,getIdDogs,getNameDogs };

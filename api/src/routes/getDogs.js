@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { getAllDogs,getIdDogs } = require('../controllers/dogsControllerAll')
+const { getAllDogs,getIdDogs,getNameDogs } = require('../controllers/dogsControllerAll')
 const router = Router();
 
 router.get('/', async (req, res) => {
@@ -9,7 +9,8 @@ router.get('/', async (req, res) => {
        
 
         if (name) {//si hay un query
-            let dogName = await totalDogs.filter(//filtro la cte que tiene todos los dogs y filtro, buscando si
+            const name_aux=await getNameDogs();
+            let dogName = await name_aux.filter(//filtro la cte que tiene todos los dogs y filtro, buscando si
                 elem => elem.nombre.toLowerCase().includes(name.toLowerCase())//cada nombre(elem.name) incluye el name que le pasé por query
             )
             if (dogName.length) {
