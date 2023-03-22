@@ -8,7 +8,7 @@
 
 .b {
   display: inline-block;
-  background-color: #312f2cf4;
+  background-color: white;
   font-weight: 600;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.313);
   border: 1px solid rgba(0, 0, 0, 0.289);
@@ -24,7 +24,7 @@
 .b:hover {
   transition: all 0.3s ease;
   /*  padding: 0px 10px; */
-  background: rgba(203, 39, 39, 0.871);
+  background: red;
   border-radius: 10px;
   box-shadow: 1px 2px 10px 0 rgb(60, 60, 60);
 }
@@ -40,7 +40,7 @@
 }
 
 .button {
-  background-color: #3b3b3af4;
+  background-color: #f3f3edf4;
   border-radius: 0.5em;
   display: flex;
   border: 2px solid rgba(0, 0, 0, 0.289);

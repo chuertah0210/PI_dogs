@@ -41,4 +41,13 @@ const getAllDogs = async () => { //funcion para concatenar
   return perros;
 }
 
-module.exports = { getAllDogs };
+const getIdDogs = async () => {
+  const perros = await Dog.findAll({
+    include: [{
+      model: Temperament,
+    }]
+  });
+  return perros;
+ }
+
+module.exports = { getAllDogs,getIdDogs };

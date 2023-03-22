@@ -1,12 +1,14 @@
 import React from "react";
 import style from "./Card.module.css";
+import { Link } from "react-router-dom";
 
-const Card = ({ image, name, temperament, weight }) => {
+const Card = ({ id,image, name, temperament, weight }) => {
   return (
     <div className={style.card}>
       <div className={style.detail}>
-        <h2>{name}</h2>
-        <p>Temperamentos: {temperament}</p>
+      <Link to={"/home/" + id} id={style.link}>
+      <h2>{name}</h2>
+                  </Link>
         <p>Peso Promedio: {weight} kg</p>
       </div>
       <img

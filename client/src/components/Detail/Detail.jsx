@@ -41,7 +41,7 @@ console.log(props);
               {dogDetail[0].años_de_vida}
             </p>
           </div>
-          <h3>Temperamentos: {dogDetail[0].temperament}</h3>
+          <h3>Temperamentos: {dogDetail[0].temperaments.map(element => ` ${element.nombre}-`)}</h3>
           <img
             src={dogDetail[0].imagen}
             alt="img"

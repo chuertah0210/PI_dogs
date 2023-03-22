@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { getAllDogs } = require('../controllers/dogsControllerAll')
+const { getAllDogs,getIdDogs } = require('../controllers/dogsControllerAll')
 const router = Router();
 
 router.get('/', async (req, res) => {
@@ -27,10 +27,11 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
     try {
-        const totalDogs = await getAllDogs();
+        const totalDogs = await getIdDogs();
         if (id) {
             const raceId = await totalDogs.filter(elem => elem.id == (id))
             if (raceId.length) {
+                console.log(raceId);
                 return res.status(200).json(raceId)
             }
         }

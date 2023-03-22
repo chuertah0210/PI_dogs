@@ -1,8 +1,8 @@
 .card {
-  background-color: #242423e3;
+  background-color: rgba(248, 248, 244, 0.89);
   border: 2px solid rgba(0, 0, 0, 0.289);
   border-radius: 10px;
-  width: 500px;
+  width: 300px;
   height: 350px;
   padding-bottom: 20px;
   border-top-left-radius: 0;

@@ -33,7 +33,7 @@ export function getNameDogs(name) {
 
 export function getTemperaments() {
     return async function (dispatch) {
-        const response = await axios.get('/temperaments');
+        const response = await axios.get('http://localhost:3001/temperaments');
         return dispatch({
             type: GET_TEMPERAMENTS,
             payload: response.data
@@ -43,7 +43,7 @@ export function getTemperaments() {
 
 export function postDog(payload) {
     return async function () {
-        const response = await axios.post('/dog', payload) //payload es todo lo que carga el usuario
+        const response = await axios.post('http://localhost:3001/dog', payload) //payload es todo lo que carga el usuario
         return response
     }
 }

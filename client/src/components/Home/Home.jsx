@@ -53,10 +53,11 @@ export default function Home() {
               //tomo unicamente los dogs que me devuelve el paginado para mostrar
               return (
                 <div className={style.cardH} key={elem.id}>
-                  <Link to={"/home/" + elem.id} id={style.link}>
+                  {/* <Link to={"/home/" + elem.id} id={style.link}>
                     <button className={style.button}>DETAIL</button>
-                  </Link>
+                  </Link> */}
                   <Card
+                  id={elem.id}
                     name={elem.nombre}
                     image={
                       elem.imagen

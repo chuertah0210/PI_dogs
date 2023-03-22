@@ -1,5 +1,5 @@
 .divProd {
-  background: url("../../img/background_general.jpg");
+  background-color: gray;
   height: 100vh;
 }
 
@@ -10,11 +10,7 @@
   box-shadow: #292435 3px 3px 10px;
   width: 700px;
   height: 820px;
-  background: linear-gradient(
-    90deg,
-    rgba(173, 141, 25, 0.676),
-    rgba(118, 63, 91, 0.749)
-  );
+  background:white;
 }
 
 .errors {
@@ -36,7 +32,7 @@
 .info label {
   display: flex;
   justify-content: center;
-  background-color: #be9e7af4;
+  background-color: white;
   display: flex;
   border: 2px solid rgba(0, 0, 0, 0.289);
   width: 165px;
@@ -47,7 +43,7 @@
 
 .b {
   font-weight: 800;
-  background-color: #be9e7af4;
+  background-color: white;
   border-radius: 10px;
   width: 200px;
   border: 2px solid black;
@@ -57,11 +53,7 @@
   border-radius: 10px;
   width: 300px;
   font-size: 20px;
-  background: linear-gradient(
-    90deg,
-    rgba(173, 141, 25, 0.676),
-    rgba(111, 75, 93, 0.749)
-  );
+  background: white;
   margin-bottom: 40px;
   margin-top: 20px;
   padding: 15px;
